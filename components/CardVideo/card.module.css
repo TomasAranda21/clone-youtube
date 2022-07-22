@@ -1,0 +1,66 @@
+.card_container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #fff;
+    width: 359px;
+    padding: 10px;
+
+}
+
+
+.img_card{
+    width: 359px;
+    height: 202px;
+    position: relative;
+}
+
+.img_card img{
+    width: 359px;
+    height: 202px;
+}
+
+
+.img_card p{
+    position: absolute;
+    background: #000;
+    padding: 1px 6px;
+    bottom: 5px;
+    right: 5px;
+    font-size: 13px;
+}
+
+.icon_account_title{
+    display: flex;
+    gap: 10px;
+    padding: 0px 10px;
+}
+
+.icon_img_container{
+    overflow: hidden;
+    height: 36px;
+    width: 55px;
+    border-radius: 50%;
+}
+
+.icon_img_container img{
+    object-fit: cover;
+
+}
+
+.time_name_channel_container{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+}
+
+.views_time_name_container{
+    color: rgba(255, 255, 255, 0.613);
+}
+
+.views_and_time{
+    display: flex;
+    gap: 6px;
+}
+
