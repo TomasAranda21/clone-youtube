@@ -1,0 +1,23 @@
+.li{
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+    padding: 13px 24px;
+}
+
+
+.li p{
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+}
+
+
+.li:hover{
+    background: #ffffff1a;
+
+    cursor: pointer;
+}
