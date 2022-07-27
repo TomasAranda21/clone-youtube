@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CardSearch from '../CardSearch/CardSearch'
 import icons from '../Icons/Icons'
+import NavAccount from '../NavAccount/NavAccount'
 import Navbar from '../Navbar/Navbar'
 import styles from './header.module.css'
 
 const Header = () => {
+
+  const [navAccount, setNavAccount] = useState(false)
+
   return (
 
     <div className={styles.header_container}>
@@ -28,17 +32,24 @@ const Header = () => {
           <div className={styles.infoAccount}>
               <p className={styles.icon_account}>{icons.addVideoIcon}</p>
               <p className={styles.icon_account}>{icons.bellIcon}</p>
-              <img src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" width="30" />
+              <img style={{cursor: 'pointer'}}
+              src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" width="30" onClick={() => setNavAccount(!navAccount)} />
+
+              {navAccount && 
+                <div className={styles.nav_account}>
+                  <NavAccount/>
+                </div>
+              }
           </div>
 
 
 
-      <div className={styles.navbar_container}>
+      {/* <div className={styles.navbar_container}>
         <Navbar/>
-      </div>
+      </div> */}
 
       </div>
-        <div className={styles.searchWords}>
+        <div >
           <CardSearch/>
         </div>
     </div>
