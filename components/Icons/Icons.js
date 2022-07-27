@@ -1,6 +1,6 @@
-import { AiFillHome, AiFillCompass, AiOutlineYoutube, AiOutlineMenu,
+import { AiFillHome, AiFillCompass, AiOutlineYoutube, AiOutlineMenu, AiOutlineHistory,
 AiOutlineDownload, AiOutlineLike, AiOutlineDislike, AiOutlineUser,
-AiOutlinePlaySquare, AiOutlineClockCircle, AiOutlineSetting, AiOutlineDollarCircle
+AiOutlinePlaySquare, AiOutlineClockCircle, AiOutlineSetting, AiOutlineDollarCircle, AiOutlineCompass
 
 } from 'react-icons/ai';
 
@@ -8,27 +8,31 @@ import { GiHamburgerMenu, GiAerialSignal } from 'react-icons/gi';
 import { VscMenu } from 'react-icons/vsc';
 import { SiYoutubemusic, SiYoutubegaming } from 'react-icons/si';
 import {  RiVideoAddLine, RiShieldUserLine } from 'react-icons/ri';
-import { GrHistory } from 'react-icons/gr';
+import { GrHistory, GrHomeRounded } from 'react-icons/gr';
 import { FiHelpCircle } from 'react-icons/fi';
-import { TbUserCircle } from 'react-icons/tb';
-import { FaRegKeyboard } from 'react-icons/fa';
-import { IoLanguageOutline } from 'react-icons/io';
+import { TbUserCircle, TbWorld, TbLanguage } from 'react-icons/tb';
+import { FaRegKeyboard, FaLinkedinIn } from 'react-icons/fa';
+import { CgHome } from 'react-icons/cg';
+import { IoLanguageOutline, IoLanguage, IoLanguageSharp } from 'react-icons/Io';
 import { MdLocalMovies, MdOutlineKeyboardArrowDown, MdOutlineSwitchAccount, MdOutlineMonetizationOn } from 'react-icons/md';
-import { BsCollectionPlay, BsPlayBtnFill, BsFlag, BsExclamationSquare, BsBoxArrowInRight,BsMoon,
-    BsTrophy, BsLightbulb, BsPlayCircle,BsBell, BsSearch, BsMicFill, BsGlobe } from 'react-icons/bs';
+import { BsCollectionPlay, BsPlayBtnFill, BsFlag, BsExclamationSquare, BsBoxArrowInRight,BsMoon, BsPlayBtn,
+    BsTrophy, BsLightbulb, BsPlayCircle,BsBell, BsSearch, BsMicFill, BsGlobe, BsGithub } from 'react-icons/bs';
 
-const homeIcon = <AiFillHome />
+const languageIcon= <TbLanguage />
+
+
+const homeIcon = <CgHome />
 const navIcon = <AiOutlineMenu />
-const exploreIcon = <AiFillCompass />
-const originalsIcon = <AiFillCompass />
+const exploreIcon = <AiOutlineCompass />
+const originalsIcon = <BsPlayBtnFill />
 const musicIcon = <SiYoutubemusic />
 const videosIcon = <AiOutlinePlaySquare />
 const subscriptionsIcon = <BsCollectionPlay />
-const libraryIcon = <BsPlayBtnFill />
+const libraryIcon = <BsPlayBtn />
 const likedIcon = <AiOutlineLike />
 const downloadIcon = <AiOutlineDownload />
 const clockIcon = <AiOutlineClockCircle />
-const historyIcon = <GrHistory />
+const historyIcon = <AiOutlineHistory />
 const arrowDownIcon = <MdOutlineKeyboardArrowDown />
 const settingsIcon = <AiOutlineSetting />
 const helpIcon = <FiHelpCircle />
@@ -56,11 +60,16 @@ const signOutIcon= <BsBoxArrowInRight />
 const membershipsIcon= <AiOutlineDollarCircle />
 const yourDataIcon= <TbUserCircle />
 const darkIcon= <BsMoon />
-const languageIcon= <IoLanguageOutline />
+
+
 const restrictedIcon= <RiShieldUserLine />
 const locationIcon= <BsGlobe />
 const keyboardIcon= <FaRegKeyboard />
 
+
+const githubIcon = <BsGithub/>
+const linkedinIcon = <FaLinkedinIn/>
+const webIcon = <TbWorld/>
 
  const icons = {
 
@@ -72,6 +81,9 @@ const keyboardIcon= <FaRegKeyboard />
     exclamationIcon,
     moviesIcon,
     gamingIcon,
+    githubIcon,
+    linkedinIcon,
+    webIcon,
     trophyIcon,
     liveIcon,
     lightIcon,
@@ -91,6 +103,16 @@ const keyboardIcon= <FaRegKeyboard />
     bellIcon,
     searchIcon,
     micIcon,
+    userIcon,
+    accountIcon,
+    signOutIcon,
+    membershipsIcon,
+    yourDataIcon,
+    darkIcon,
+    languageIcon,
+    restrictedIcon,
+    locationIcon,
+    keyboardIcon
 
 
 }
