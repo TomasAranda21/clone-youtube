@@ -1,0 +1,29 @@
+.nav_account_container{
+    background: #212121fb;
+    color: #fff;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.106);
+
+    border-top: none;
+
+}
+
+.nav_account{
+    padding: 8px;
+    line-height: 10px;    
+}
+
+.account_name_img{
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    padding: 10px ;
+    align-items: center;
+    justify-content: flex-start;
+
+
+}
+
+.account_name a{
+    color: #3ea6ff;
+}
