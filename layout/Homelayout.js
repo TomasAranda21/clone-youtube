@@ -1,16 +1,34 @@
 import React from 'react'
 import styles from './Homelayout.module.css'
+import Head from 'next/head'
+import Footer from '../components/Footer/Footer'
+
 
 const Homelayout = ({children}) => {
 
   return (
 
-    <div className={styles.container}>
+    <>
+    
+      <Head>
+            <title> Clone Youtube</title>
+            <link rel="icon" href=''/>
 
-        {children}
+      </Head>
 
 
-    </div>
+
+      <div className={styles.container}>
+
+          {children}
+
+
+        <Footer/>
+
+      </div>
+
+    </>
+
 
   )
 }
