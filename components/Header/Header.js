@@ -5,7 +5,7 @@ import NavAccount from '../NavAccount/NavAccount'
 import Navbar from '../Navbar/Navbar'
 import styles from './header.module.css'
 
-const Header = () => {
+const Header = ({searchCarousel}) => {
 
   const [navAccount, setNavAccount] = useState(false)
 
@@ -44,14 +44,15 @@ const Header = () => {
 
 
 
-      {/* <div className={styles.navbar_container}>
-        <Navbar/>
-      </div> */}
 
       </div>
+      { searchCarousel && 
+
         <div >
           <CardSearch/>
         </div>
+
+      }
     </div>
 
   )
