@@ -46,16 +46,15 @@ const CardSearch = () => {
   return (
     <>
        <div className={styles.responsiveCarousel}>
-        <Slider {...settings}>
-  
-            {apiBusquedas.map(search => (
-                <div className={styles.cards_search} key={search}>
-                    <p>{search}</p>
-                </div>
-            ))}
+          <Slider {...settings}>
+    
+              {apiBusquedas.map(search => (
+                  <div className={styles.cards_search} key={search}>
+                      <p>{search}</p>
+                  </div>
+              ))}
 
-
-        </Slider>
+          </Slider>
         </div>
 
     
