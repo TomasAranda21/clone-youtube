@@ -18,27 +18,21 @@ const NavAccount = () => {
                 </div>
             </li>
             <hr/>
-
                 <LiAccount text='Your channel' icon={icons.userIcon}/>
                 <LiAccount text='Youtube Studio' icon={icons.userIcon}/>
                 <LiAccount text='Switch account' icon={icons.accountIcon}/>
                 <LiAccount text='Sign out' icon={icons.signOutIcon}/>
-
             <hr/>
-            
                 <LiAccount text='Purchases and memberships' icon={icons.membershipsIcon}/>
                 <LiAccount text='Your data in Youtube' icon={icons.yourDataIcon}/>
-
             <hr/>
                 <LiAccount text='Appearance: Dark' icon={icons.darkIcon}/>
                 <LiAccount text='Language: English' icon={icons.languageIcon}/>
                 <LiAccount text='Restricted Mode: off' icon={icons.restrictedIcon}/>
                 <LiAccount text='Location: Argentina' icon={icons.locationIcon}/>
                 <LiAccount text='Keyboard shortcuts' icon={icons.keyboardIcon}/>
-
             <hr/>
                 <LiAccount text='Settings' icon={icons.settingsIcon}/>
-
             <hr/>
                 <LiAccount text='Help' icon={icons.helpIcon}/>
                 <LiAccount text='Send feedback' icon={icons.exclamationIcon}/>
